@@ -1,0 +1,23 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "esbuild": "^0.21.5",
+    "express": "^4.19.2",
+    "@repo/db": "*"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js",
+    "dev": "nodemon dist/index.js"
+  }
+}

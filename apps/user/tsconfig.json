@@ -1,0 +1,25 @@
+{
+  "extends": "@repo/typescript-config/nextjs.json",
+  "target": "es5",
+  "module": "commonjs",
+  "strict": true,
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "next.config.js",
+    "**/*.ts",
+    ".next/types/**/*.ts",
+    "src/**/*.ts",
+    "apps/user/tailwind.config.js",
+    "./.eslintrc.js",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

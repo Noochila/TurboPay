@@ -1,0 +1,24 @@
+{
+  "name": "@repo/common",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    "./MerchantSchema": "./index.ts",
+    "./UserSchema": "./index.ts",
+    "./OnRampSchema": "./index.ts",
+    "./BalanceSchema": "./index.ts",
+    "./p2pTransferSchema": "./index.ts",
+    "./MerchantSchemaType": "./index.ts",
+    "./UserSchemaType": "./index.ts",
+    "./OnRampSchemaType": "./index.ts",
+    "./BalanceSchemaType": "./index.ts",
+    "./p2pTransferSchemaType": "./index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
